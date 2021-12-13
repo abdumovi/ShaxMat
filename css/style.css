@@ -44,13 +44,76 @@ h6{
 p{
   margin: 0;
 }
-@media only screen and (min-width: 1200px) {
-  .container {
-    width: 1140px;
-  }
 .container{
+  width: 2800px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.bordr{
+  width: 2300px;
+  height: 2319px;
+  border: 30px solid #333333;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  
+}
+.div{
+  width: 280px;
+  height: 280px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.figur{
+  border: none;
+  width: 280px;
+  height: 280px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.figur:nth-child(1){
+  background-image: url('../img/fi1.svg');
+}
+.figur:nth-child(2){
+  background-image: url('../img/fi4.svg');
+}
+.figur:nth-child(3){
+  background-image: url('../img/fi3.svg');
+}
+.figur:nth-child(4){
+  background-image: url('../img/fi2.svg');
+}
+.figures{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 200;
+}
+
+.block{
+  display: block;
+}
+.co1{
+  background-color: #F0D9B5;
+}
+.co2{
+  background-color: #B58863;
+}
+.red{
+  background-color: rgba(0, 132, 255, 0.548);
+}
+.active{
+  border: 10px solid #ff8a2aec;
+}
+.imgs{
+  position: relative;
+  z-index: -200;
 }
